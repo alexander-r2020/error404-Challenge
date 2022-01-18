@@ -1,0 +1,73 @@
+:root{
+    --letter:'Bree Serif', serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 30px;
+
+}
+h2{
+    width: 90%;
+    margin: 20px auto;
+}
+.error{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px auto;
+}
+.error .error-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.error .error-container img{
+    width: 100%;
+    margin: 0 auto;
+}
+.error .error-message h1{
+    font-family: var(--letter);
+    font-weight: 400;
+    line-height: 3rem;
+    font-size: 2.9rem;
+    word-spacing: 1rem;
+}
+.error .error-message p{
+    width: 80%;
+    margin: 50px 0 50px 0;
+    font-size: 1.5rem;
+}
+
+
+.footer{
+    text-align: center;
+}
+
+
+@media (min-width:1024px){
+    .error{
+        justify-content: space-between;
+    }
+    .error .error-container{
+        width: 42%;
+        margin-bottom: 0px;
+    }
+    .error .error-message{
+        
+        width: 47%;
+    }
+    .error .error-message p{
+        width: 60%;
+        margin: 50px 0 50px 0;
+        font-size: 1.5rem;
+    }
+}
